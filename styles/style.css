@@ -29,11 +29,13 @@ h3{
   font-size: 2rem;
 }
 
-
+p{
+  font-size: 20px;
+}
 .banner{
   display: flex;
   align-items: center;
-  padding: 50px;
+  padding: 92px 20px;
   background-color: #1C1C1C;
 }
 
@@ -46,18 +48,30 @@ h3{
   flex-wrap: wrap;
 }
 .section-card{
-display: flex;
-flex-direction: column;
-align-items: center;
-min-width: 200px;
-margin: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 200px;
+  width: 100%;
+  margin: 0 20px 20px 20px;
 }
 
 .section-card > img{
-  width: 100%;
   height: 500px;
+  aspect-ratio: 1;
   object-fit: cover;
 
+}
+
+
+@media(max-width:768px){
+
+  .section-card{
+    flex-direction: column;
+  }
+  .section-card h2{
+    margin: 50px 0;
+  }
 }
 .footer{
   height: 300px;
